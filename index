@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoVaa Music Production | Official Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-black: #0a0a0a;       /* Alap fekete */
+            --bg-dark-grey: #161616;   /* Sötétszürke váltakozáshoz */
+            --text-color: #ffffff;
+            --accent-color: #ff8c00;   /* Narancssárga */
+            --nav-bg: rgba(0, 0, 0, 0.95);
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            background-color: var(--bg-black);
+            color: var(--text-color);
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            position: fixed; top: 0; width: 100%;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 50px; background: var(--nav-bg);
+            z-index: 1000; box-sizing: border-box;
+            border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem; font-weight: bold; letter-spacing: 3px;
+            text-transform: uppercase; color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .nav-content { display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        nav ul li a:hover { color: var(--accent-color); }
+
+        /* --- Sections (Alternating Colors) --- */
+        section { padding: 120px 10%; text-align: center; }
+        
+        /* Fekete szekciók */
+        .bg-black { background-color: var(--bg-black); }
+        
+        /* Sötétszürke szekciók */
+        .bg-grey { background-color: var(--bg-dark-grey); }
+
+        /* --- Hero --- */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('studio-bg.jpg'); 
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding: 0;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5.5rem); margin: 0;
+            text-transform: uppercase; letter-spacing: 8px;
+            text-shadow: 2px 2px 30px rgba(0,0,0,0.8);
+        }
+
+        .section-title {
+            color: var(--accent-color); font-family: 'Playfair Display', serif;
+            font-size: 2.5rem; letter-spacing: 4px; margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .about-text { 
+            max-width: 1000px; margin: 0 auto; 
+            font-size: 1.2rem; line-height: 1.9; font-weight: 300; color: #eeeeee; 
+        }
+        .highlight { color: var(--accent-color); font-weight: 600; }
+
+        /* --- Video/Portfolio Grid --- */
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 40px; max-width: 1400px; margin: 0 auto; 
+        }
+        .video-container { 
+            position: relative; padding-bottom: 56.25%; height: 0; 
+            border: 1px solid rgba(255, 140, 0, 0.1); 
+            transition: 0.3s; 
+        }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .video-container:hover { border-color: var(--accent-color); transform: translateY(-5px); }
+        .video-title { margin-top: 15px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-color); }
+
+        /* --- Gallery --- */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .gallery-item { overflow: hidden; border: 1px solid rgba(255, 140, 0, 0.1); aspect-ratio: 16 / 9; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .gallery-item:hover img { transform: scale(1.05); }
+
+        /* --- Footer --- */
+        footer { padding: 60px 20px; text-align: center; background: #000; border-top: 1px solid rgba(255, 140, 0, 0.1); }
+        .footer-socials { margin-bottom: 20px; display: flex; justify-content: center; gap: 25px; }
+        .footer-socials a { color: #fff; font-size: 1.5rem; transition: 0.3s; }
+        .footer-socials a:hover { color: var(--accent-color); }
+
+        @media (max-width: 800px) {
+            nav { padding: 15px 20px; flex-direction: column; }
+            nav ul { margin-top: 15px; font-size: 0.7rem; }
+            section { padding: 80px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">ZoVaa Music</a>
+        <div class="nav-content">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#studio">Studio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero bg-black">
+        <h1>ZoVaa Music</h1>
+        <p style="color: var(--accent-color); letter-spacing: 5px; text-transform: uppercase;">Production | Mixing | Mastering</p>
+    </section>
+
+    <section id="about" class="bg-grey">
+        <h2 class="section-title">The Vision</h2>
+        <div class="about-text">
+            At <span class="highlight">ZoVaa Music Production</span>, sound is more than just vibrations. It's about character, emotion, and precision. Whether it's a gritty rock track or a clean pop mix, we ensure your sound stands out in a crowded industry.
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-black">
+        <h2 class="section-title">Latest Work</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/zsMSQrzMJP4" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-title">Modern Rock Production</div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/BiPGsQ-iQW8" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-title">Vocal Engineering</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="studio" class="bg-grey">
+        <h2 class="section-title">The Studio</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://via.placeholder.com/800x450/111/ff8c00?text=Analog+Gear" alt="Studio"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/800x450/111/ff8c00?text=Control+Room" alt="Studio"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/800x450/111/ff8c00?text=Microphones" alt="Studio"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-black">
+        <h2 class="section-title">Start Your Project</h2>
+        <p>Drop an email for rates and availability:</p>
+        <p style="color: var(--accent-color); font-size: 1.5rem; margin-top: 10px; font-weight: bold;">hello@zovaamusic.com</p>
+    </section>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="copyright">© 2026 ZoVaa Music Production.</div>
+    </footer>
+
+</body>
+</html>
