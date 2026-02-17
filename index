@@ -6,7 +6,7 @@
     <title>ZoVaa Music Production | Official Site</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+   
     <style>
         :root {
             --bg-black: #0a0a0a;       /* Alap fekete */
@@ -48,17 +48,17 @@
 
         /* --- Sections (Alternating Colors) --- */
         section { padding: 120px 10%; text-align: center; }
-        
+       
         /* Fekete szekciók */
         .bg-black { background-color: var(--bg-black); }
-        
+       
         /* Sötétszürke szekciók */
         .bg-grey { background-color: var(--bg-dark-grey); }
 
         /* --- Hero --- */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('studio-bg.jpg'); 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('studio-bg.jpg');
             background-size: cover; background-position: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             padding: 0;
@@ -77,22 +77,22 @@
             text-transform: uppercase;
         }
 
-        .about-text { 
-            max-width: 1000px; margin: 0 auto; 
-            font-size: 1.2rem; line-height: 1.9; font-weight: 300; color: #eeeeee; 
+        .about-text {
+            max-width: 1000px; margin: 0 auto;
+            font-size: 1.2rem; line-height: 1.9; font-weight: 300; color: #eeeeee;
         }
         .highlight { color: var(--accent-color); font-weight: 600; }
 
         /* --- Video/Portfolio Grid --- */
-        .video-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 40px; max-width: 1400px; margin: 0 auto; 
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px; max-width: 1400px; margin: 0 auto;
         }
-        .video-container { 
-            position: relative; padding-bottom: 56.25%; height: 0; 
-            border: 1px solid rgba(255, 140, 0, 0.1); 
-            transition: 0.3s; 
+        .video-container {
+            position: relative; padding-bottom: 56.25%; height: 0;
+            border: 1px solid rgba(255, 140, 0, 0.1);
+            transition: 0.3s;
         }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         .video-container:hover { border-color: var(--accent-color); transform: translateY(-5px); }
@@ -107,7 +107,7 @@
         /* --- Footer --- */
         footer { padding: 60px 20px; text-align: center; background: #000; border-top: 1px solid rgba(255, 140, 0, 0.1); }
         .footer-socials { margin-bottom: 20px; display: flex; justify-content: center; gap: 25px; }
-        .footer-socials a { color: #fff; font-size: 1.5rem; transition: 0.3s; }
+        .footer-socials a { color: #fff; font-size: 1.8rem; transition: 0.3s; }
         .footer-socials a:hover { color: var(--accent-color); }
 
         @media (max-width: 800px) {
@@ -123,61 +123,199 @@
         <a href="#" class="logo">ZoVaa Music</a>
         <div class="nav-content">
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#studio">Studio</a></li>
+                <li><a href="#portfolio">Studio</a></li>
+                <li><a href="#live-sound">Live</a></li>
+                <li><a href="#partners">Partners</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="home" class="hero bg-black">
-        <h1>ZoVaa Music</h1>
-        <p style="color: var(--accent-color); letter-spacing: 5px; text-transform: uppercase;">Production | Mixing | Mastering</p>
+        <h1>ZoVaa Music Production</h1>
+        <p style="color: var(--accent-color); letter-spacing: 5px; text-transform: uppercase;">STUDIO | LIVE SOUND | PRODUCTION</p>
     </section>
 
     <section id="about" class="bg-grey">
         <h2 class="section-title">The Vision</h2>
         <div class="about-text">
-            At <span class="highlight">ZoVaa Music Production</span>, sound is more than just vibrations. It's about character, emotion, and precision. Whether it's a gritty rock track or a clean pop mix, we ensure your sound stands out in a crowded industry.
+             <span class="highlight">ZoVaa Music Production</span> is a family-style company built on passion, precision, and real-world experience. We connect three essential pillars of the music industry under one roof <span class="highlight">professional studio </span>  production, <span class="highlight">Live sound </span> services and <span class="highlight"> case </span> manufacturing.
         </div>
     </section>
 
     <section id="portfolio" class="bg-black">
-        <h2 class="section-title">Latest Work</h2>
-        <div class="video-grid">
-            <div class="video-card">
-                <div class="video-container"><iframe src="https://www.youtube.com/embed/zsMSQrzMJP4" frameborder="0" allowfullscreen></iframe></div>
-                <div class="video-title">Modern Rock Production</div>
+        <h2 class="section-title">Studio</h2>
+        <div class="about-text">
+            We provide a <span class="highlight">professional</span>,
+            <span class="highlight">inspiring environment</span> where
+            <span class="highlight">creativity</span> meets
+            <span class="highlight">technical precision</span>.<br><br>
+
+            From the <span class="highlight">first demo</span> to the
+            <span class="highlight">final master</span>, we support
+            <span class="highlight">artists</span>,
+            <span class="highlight">bands</span>, and
+            <span class="highlight">creators</span> through every stage of the
+            <span class="highlight">production process</span>.<br><br>
+
+            Our services include:
+            <br><br>
+
+            <span class="highlight">Recording</span><br>
+            <span class="highlight">Editing</span><br>
+            <span class="highlight">Mixing</span><br>
+            <span class="highlight">Mastering</span><br>
+            <span class="highlight">Arrangement & Production Support</span>
+            <br><br>
+
+            We combine <span class="highlight">high-quality equipment</span> with
+            <span class="highlight">experienced ears</span> and a
+            <span class="highlight">musician-focused mindset</span>.<br><br>
+
+            Because we are actively involved in
+            <span class="highlight">live sound</span> and
+            <span class="highlight">technical production</span>, we understand how recordings must
+            translate beyond the studio — onto the
+            <span class="highlight">stage</span> and into
+            <span class="highlight">real listening environments</span>.
+        </div>
+    </section>
+
+    <section id="live-sound" class="bg-grey">
+        <h2 class="section-title">Live Sound</h2>
+        <div class="about-text">
+            At <span class="highlight">ZoVaa Music Productions</span>,
+            live sound is more than amplification — it is
+            <span class="highlight">clarity</span>,
+            <span class="highlight">control</span>, and
+            <span class="highlight">consistency</span> in every environment.
+            <br><br>
+
+            Our system is built around
+            <span class="highlight">PS Audio speaker systems</span>, delivering
+            <span class="highlight">wide dispersion</span>,
+            <span class="highlight">tight low-end response</span>, and
+            <span class="highlight">detailed high-frequency clarity</span>
+            across the entire venue.
+            <br><br>
+
+            Powered by
+            <span class="highlight">Chevin high-linearity amplifiers</span>,
+            we ensure exceptional <span class="highlight">headroom</span>,
+            <span class="highlight">dynamic accuracy</span>, and reliable performance
+            even under demanding live conditions.
+            <br><br>
+
+            At the heart of our control sits the
+            <span class="highlight">Allen & Heath digital mixing console</span>,
+            providing <span class="highlight">precise signal processing</span>,
+            <span class="highlight">flexible routing</span>, and
+            <span class="highlight">surgical mix control</span>.
+            <br><br>
+
+            For capture, we rely on industry-trusted microphones from
+            <span class="highlight">Shure</span>,
+            <span class="highlight">AKG</span>,
+            <span class="highlight">Sennheiser</span>, and
+            <span class="highlight">Audix</span> —
+            ensuring every vocal and instrument is reproduced with
+            <span class="highlight">definition</span>,
+            <span class="highlight">presence</span>, and
+            <span class="highlight">natural character</span>.
+            <br><br>
+
+            The result is a <span class="highlight">coherent signal chain</span>
+            designed to translate the artist’s performance with
+            <span class="highlight">power</span>,
+            <span class="highlight">transparency</span>, and
+            <span class="highlight">professional impact</span> —
+            from stage to audience.
+        </div>
+    </section>
+
+    <section id="partners" class="bg-black">
+        <h2 class="section-title">Partners</h2>
+        <div class="about-text">
+            <div style="margin-bottom: 70px;">
+                <div style="width: 200px; height: 100px; border: 1px solid rgba(255,140,0,0.3); margin: 0 auto 20px auto;"></div>
+                <h3 style="color: var(--accent-color); letter-spacing: 3px;">PS-Audio</h3>
+                <p>
+                    <span class="highlight">PS-Audio speaker systems</span> deliver exceptional clarity, controlled dispersion,
+                    and powerful low-end response for professional live environments.
+                    A key element in our <span class="highlight">precision live sound architecture</span>.
+                </p>
+                <a href="#" target="https://psaudio.hu" style="color: var(--accent-color); text-decoration: none; letter-spacing: 2px; text-transform: uppercase;">Visit Social Media</a>
             </div>
-            <div class="video-card">
-                <div class="video-container"><iframe src="https://www.youtube.com/embed/BiPGsQ-iQW8" frameborder="0" allowfullscreen></iframe></div>
-                <div class="video-title">Vocal Engineering</div>
+
+            <div style="margin-bottom: 70px;">
+                <div style="width: 200px; height: 100px; border: 1px solid rgba(255,140,0,0.3); margin: 0 auto 20px auto;"></div>
+                <h3 style="color: var(--accent-color); letter-spacing: 3px;">Chevin</h3>
+                <p>
+                    <span class="highlight">Chevin amplifiers</span> are known for their high-linearity performance and outstanding headroom,
+                    ensuring <span class="highlight">dynamic accuracy</span> and uncompromised reliability on stage.
+                </p>
+                <a href="#" target="http://www.chevin-research.com" style="color: var(--accent-color); text-decoration: none; letter-spacing: 2px; text-transform: uppercase;">Visit Social Media</a>
+            </div>
+
+            <div style="margin-bottom: 70px;">
+                <div style="width: 200px; height: 100px; border: 1px solid rgba(255,140,0,0.3); margin: 0 auto 20px auto;"></div>
+                <h3 style="color: var(--accent-color); letter-spacing: 3px;">Hübitech</h3>
+                <p>
+                    <span class="highlight">Hübitech DI Boxes</span> are boutique-built tools designed for surgical transparency
+                    and extended headroom, preserving the <span class="highlight">true character of every instrument</span>.
+                </p>
+                <a href="#" target="https://hubitech.hu" style="color: var(--accent-color); text-decoration: none; letter-spacing: 2px; text-transform: uppercase;">Visit Social Media</a>
+            </div>
+
+            <div style="margin-bottom: 70px;">
+                <div style="width: 200px; height: 100px; border: 1px solid rgba(255,140,0,0.3); margin: 0 auto 20px auto;"></div>
+                <h3 style="color: var(--accent-color); letter-spacing: 3px;">KAOS AMP</h3>
+                <p>
+                    <span class="highlight">KAOS AMP preamps</span> provide detailed harmonic structure and controlled gain staging,
+                    delivering <span class="highlight">character with precision</span> in both studio and live settings.
+                </p>
+                <a href="#" target="https://www.kaosamp.com/metal-series/" style="color: var(--accent-color); text-decoration: none; letter-spacing: 2px; text-transform: uppercase;">Visit Social Media</a>
+            </div>
+
+            <div style="margin-bottom: 70px;">
+                <div style="width: 200px; height: 100px; border: 1px solid rgba(255,140,0,0.3); margin: 0 auto 20px auto;"></div>
+                <h3 style="color: var(--accent-color); letter-spacing: 3px;">Peter Cmorik Band</h3>
+                <p>
+                    The <span class="highlight">Peter Cmorik Band</span> represents professional musicianship
+                    and high-level live production, where <span class="highlight">sound precision meets performance energy</span>.
+                </p>
+                <a href="#" target="https://www.petercmorik.sk" style="color: var(--accent-color); text-decoration: none; letter-spacing: 2px; text-transform: uppercase;">Visit Social Media</a>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <div style="width: 200px; height: 100px; border: 1px solid rgba(255,140,0,0.3); margin: 0 auto 20px auto;"></div>
+                <h3 style="color: var(--accent-color); letter-spacing: 3px;">Kingfishers</h3>
+                <p>
+                    <span class="highlight">Kingfishers</span> modern rock music and passion in one place <span class="highlight">powerful and transparent live sound system</span>.
+                </p>
+                <a href="#" target="https://kingfishers.hu" style="color: var(--accent-color); text-decoration: none; letter-spacing: 2px; text-transform: uppercase;">Visit Social Media</a>
             </div>
         </div>
     </section>
 
-    <section id="studio" class="bg-grey">
-        <h2 class="section-title">The Studio</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="https://via.placeholder.com/800x450/111/ff8c00?text=Analog+Gear" alt="Studio"></div>
-            <div class="gallery-item"><img src="https://via.placeholder.com/800x450/111/ff8c00?text=Control+Room" alt="Studio"></div>
-            <div class="gallery-item"><img src="https://via.placeholder.com/800x450/111/ff8c00?text=Microphones" alt="Studio"></div>
+    <section id="contact" class="bg-grey">
+        <h2 class="section-title">Contact</h2>
+        <div class="about-text">
+            <h3 style="color: var(--accent-color); letter-spacing: 2px; text-transform: uppercase;">Vanek Gábor</h3>
+            <p style="font-size: 1.5rem; margin: 10px 0;">
+                <a href="tel:+421902100800" style="color: white; text-decoration: none;">+421 902 100 800</a>
+            </p>
+            <p style="font-size: 1.3rem;">
+                <a href="mailto:vanek.gabor@gmail.com" style="color: var(--accent-color); text-decoration: none; font-weight: bold;">vanek.gabor@gmail.com</a>
+            </p>
         </div>
-    </section>
-
-    <section id="contact" class="bg-black">
-        <h2 class="section-title">Start Your Project</h2>
-        <p>Drop an email for rates and availability:</p>
-        <p style="color: var(--accent-color); font-size: 1.5rem; margin-top: 10px; font-weight: bold;">hello@zovaamusic.com</p>
     </section>
 
     <footer>
         <div class="footer-socials">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-spotify"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="https://www.instagram.com/zovaamusic_gaaborka/"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="https://www.facebook.com/sahymusic/"><i class="fab fa-facebook-f"></i></a>
         </div>
         <div class="copyright">© 2026 ZoVaa Music Production.</div>
     </footer>
