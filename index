@@ -54,6 +54,50 @@
        
         /* Sötétszürke szekciók */
         .bg-grey { background-color: var(--bg-dark-grey); }
+        /* Gallery System */
+.gallery-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.gallery-item { 
+    overflow: hidden; 
+    border: 1px solid rgba(255, 140, 0, 0.1); 
+    aspect-ratio: 16 / 9; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.gallery-item:hover { border-color: var(--accent-color); transform: translateY(-5px); }
+.gallery-item:hover img { transform: scale(1.05); }
+
+/* Lightbox Modal */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.close-btn {
+    position: absolute;
+    top: 30px; right: 40px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    line-height: 1;
+}
 
         /* --- Hero --- */
 .hero {
@@ -133,6 +177,7 @@
                 <li><a href="#portfolio">Studio</a></li>
                 <li><a href="#live-sound">Live</a></li>
                 <li><a href="#partners">Partners</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -304,8 +349,28 @@
             </div>
         </div>
     </section>
+    
+    <section id="gallery" class="bg-grey">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('pexels-photo-192385.jpeg')">
+            <img src="pexels-photo-192385.jpeg" alt="Studio Life">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('pexels-photo-192385.jpeg')">
+            <img src="pexels-photo-192385.jpeg" alt="Live Event">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('pexels-photo-192385.jpeg')">
+            <img src="pexels-photo-192385.jpeg" alt="Gear">
+        </div>
+    </div>
+</section>
 
-    <section id="contact" class="bg-grey">
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Popup Image">
+</div>
+
+    <section id="contact" class="bg-black">
         <h2 class="section-title">Contact</h2>
         <div class="about-text">
             <h3 style="color: var(--accent-color); letter-spacing: 2px; text-transform: uppercase;">Vanek Gábor</h3>
@@ -325,6 +390,20 @@
         </div>
         <div class="copyright">© 2026 ZoVaa Music Production.</div>
     </footer>
+
+<script>
+    function openLightbox(imgSrc) {
+        document.getElementById('lightbox-img').src = imgSrc;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+    // Bezárás ESC billentyűvel
+    document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape") closeLightbox();
+    });
+</script>
 
 </body>
 </html>
