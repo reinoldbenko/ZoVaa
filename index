@@ -354,13 +354,13 @@
     <h2 class="section-title">Gallery</h2>
     <div class="gallery-grid">
         <div class="gallery-item" onclick="openLightbox('pexels-photo-192385.jpeg')">
-            <img src="pexels-photo-192385.jpeg" alt="Studio Life">
+            <img src="pexels-photo-192385.jpeg" alt="Studio">
         </div>
         <div class="gallery-item" onclick="openLightbox('pexels-photo-192385.jpeg')">
-            <img src="pexels-photo-192385.jpeg" alt="Live Event">
+            <img src="pexels-photo-192385.jpeg" alt="PS-Audio">
         </div>
         <div class="gallery-item" onclick="openLightbox('pexels-photo-192385.jpeg')">
-            <img src="pexels-photo-192385.jpeg" alt="Gear">
+            <img src="pexels-photo-192385.jpeg" alt="Live event">
         </div>
     </div>
 </section>
