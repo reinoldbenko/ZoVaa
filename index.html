@@ -8,6 +8,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    
     <style>
+        /* Gallery Rács Elrendezés */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid rgba(255, 140, 0, 0.1);
+    aspect-ratio: 16 / 9; /* Egységes téglalap forma minden képnek */
+    transition: all 0.4s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Kitölti a keretet torzítás nélkül */
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 140, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Enyhe közelítés hover esetén */
+}
+
+/* Lightbox (Nagyított ablak) stílusai */
+.lightbox {
+    display: none; /* Alaphelyzetben rejtve */
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85%;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px; right: 30px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover { color: var(--accent-color); }
         :root {
             --bg-black: #0a0a0a;       /* Alap fekete */
             --bg-dark-grey: #161616;   /* Sötétszürke váltakozáshoz */
